@@ -65,10 +65,6 @@ const ProfilePage = () => {
     }
   }, [userProfile]);
 
-  // useEffect(() => {
-  //   console.log(formData, "cek formData");
-  // }, [formData]);
-
   const validate = () => {
     const errors = {
       username: "",
