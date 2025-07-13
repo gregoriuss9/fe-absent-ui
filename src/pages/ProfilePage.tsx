@@ -45,7 +45,7 @@ const ProfilePage = () => {
         konfirmasiPasswordBaru: "",
       }));
       authService.logout();
-      window.location.href = "/login";
+      window.location.href = "/";
     },
     onError: (error: any) => {
       console.error(

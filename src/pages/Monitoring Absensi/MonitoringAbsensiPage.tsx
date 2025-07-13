@@ -25,7 +25,6 @@ interface AttendancesEmployeeToday {
 }
 
 const MonitoringAbsensiPage = () => {
-  const mainStorageUrl = import.meta.env.VITE_MAIN_API_STORAGE;
   const [pagination, setPagination] = useState({ current: 1, pageSize: 10 });
 
   const { data: allAttendances, isPending: allAttendancesPending } = useQuery({
@@ -130,7 +129,7 @@ const MonitoringAbsensiPage = () => {
           label="Lihat Bukti"
           type="secondaryOutline"
           onClick={() => {
-            window.open(`${mainStorageUrl}${record.photo_url}`, "_blank");
+            window.open(`${record.photo_url}`, "_blank");
           }}
         />
       ),

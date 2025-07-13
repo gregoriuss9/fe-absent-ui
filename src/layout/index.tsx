@@ -24,7 +24,7 @@ const Layout = ({ children }: LayoutProps) => {
 
   const handleLogout = () => {
     authService.logout();
-    window.location.href = "/login";
+    window.location.href = "/";
   };
 
   if (isExpired) {

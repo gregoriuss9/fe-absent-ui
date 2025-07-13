@@ -30,7 +30,7 @@ mainApiClient.interceptors.response.use(
         case 401:
           localStorage.clear();
           if (window.location.pathname !== "/login") {
-            window.location.href = "/login";
+            window.location.href = "/";
           }
           break;
         case 403:
